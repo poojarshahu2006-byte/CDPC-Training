@@ -1,0 +1,217 @@
+## PYTHON FUNCTIONS, LISTS AND STRINGS
+
+1. Function Without Using Parameters
+
+---
+
+This function takes input values inside the function and prints the addition.
+
+def add():
+
+```
+a = int(input("Enter first value: "))  
+b = int(input("Enter second value: "))  
+
+result = a + b  
+
+print("Sum:", result)
+```
+
+if **name** == "**main**":
+add()
+
+---
+
+2. Function With Parameters
+
+---
+
+In this function, values are passed as arguments.
+
+def add(x, y):
+
+```
+result = x + y  
+print("Sum:", result)
+```
+
+if **name** == "**main**":
+
+```
+a = int(input("Enter first value: "))  
+b = int(input("Enter second value: "))  
+
+add(a, b)
+```
+
+---
+
+3. Function That Returns a Value
+
+---
+
+This function calculates the result and returns it to the main program.
+
+def add(x, y):
+
+```
+result = x + y  
+return result
+```
+
+if **name** == "**main**":
+
+```
+a = int(input("Enter first value: "))  
+b = int(input("Enter second value: "))  
+
+total = add(a, b)
+
+print("Sum:", total)
+```
+
+---
+
+4. Function Returning Multiple Results
+
+---
+
+A single function can return more than one value.
+
+def calculate(x, y):
+
+```
+add = x + y  
+sub = x - y  
+mul = x * y  
+div = x / y  
+
+return add, sub, mul, div
+```
+
+if **name** == "**main**":
+
+```
+a = int(input("Enter first value: "))  
+b = int(input("Enter second value: "))
+
+r1, r2, r3, r4 = calculate(a, b)
+
+print("Addition:", r1)  
+print("Subtraction:", r2)  
+print("Multiplication:", r3)  
+print("Division:", r4)
+```
+
+---
+
+## LISTS IN PYTHON
+
+Create an Empty List
+
+lst = []
+print(type(lst))
+
+Another way to create a list
+
+lst = list()
+print(type(lst))
+
+---
+
+Create a List with Values
+
+lst = [11, 22, 33, 44, 55, 66]
+
+print(lst)
+
+---
+
+Access Elements Using Index
+
+for i in range(len(lst)):
+
+```
+print(lst[i])
+```
+
+---
+
+Access Elements Directly
+
+for item in lst:
+
+```
+print(item)
+```
+
+---
+
+Adding Elements to List
+
+lst.append(12)
+lst.append(34)
+
+print(lst)
+
+---
+
+List Indexing Examples
+
+print(lst[0])     # first element
+print(lst[-1])    # last element using negative index
+
+---
+
+List Slicing
+
+print(lst[2:4])
+print(lst[::2])
+print(lst[::-2])
+print(lst[::-1])   # reverse the list
+
+---
+
+## STRINGS IN PYTHON
+
+Example String
+
+s = "Ashish"
+
+print(s[1:4])    # substring extraction
+print(s[::-1])   # reverse string using slicing
+
+---
+
+Count Number of Digits in a Number
+
+num = 1234
+
+print(len(str(num)))
+
+---
+
+Check the Data Type
+
+print(type(s))
+
+---
+
+## REVERSE A STRING WITHOUT USING BUILT-IN FUNCTION
+
+text = "Pooja"
+rev = ""
+
+for Po in text:
+
+```
+rev = Po + rev
+```
+
+print(rev)
+
+Output
+
+ajooP
+
+---

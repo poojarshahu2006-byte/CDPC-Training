@@ -1,0 +1,241 @@
+PYTHON PROGRAM – REVERSE A THREE DIGIT NUMBER
+
+Python Program
+
+num = int(input("Enter a three digit number: "))
+
+d1 = num % 10
+num = num // 10
+d2 = num % 10
+d3 = num // 10
+
+reverse = d1100 + d210 + d3
+
+print("Reversed Number:", reverse)
+
+Example
+
+Input : 123
+Output: 321
+
+ALGORITHMS AND DATA STRUCTURES
+
+Algorithm
+An algorithm is a clear sequence of steps used to solve a problem or perform a task in programming. It explains the logic used to reach a solution.
+
+Examples:
+Sorting numbers
+Searching data
+Finding factorial
+Calculating prime numbers
+
+Data Structure
+A data structure is a technique used to organize and store data so that it can be accessed and processed efficiently.
+
+Examples:
+Array
+Linked List
+Stack
+Queue
+Tree
+Graph
+
+TYPES OF DATA STRUCTURES
+
+Primitive Data Structures
+
+Primitive data structures are the basic data types that are directly supported by programming languages.
+
+Examples:
+Integer
+Float
+Character
+String
+Boolean
+
+Non-Primitive Data Structures
+
+Non-primitive structures are created using primitive data types and are more complex.
+
+They are divided into two categories.
+
+A) Linear Data Structures
+
+In linear data structures, elements are arranged in a sequential order.
+
+Examples:
+Array
+Linked List
+Stack
+Queue
+
+B) Non-Linear Data Structures
+
+In non-linear structures, data elements are connected in hierarchical or network form.
+
+Examples:
+Tree
+Graph
+
+BIG O NOTATION
+
+Big O notation is used to describe the performance or efficiency of an algorithm as the input size increases.
+
+It explains how the running time or memory requirement grows when the amount of data becomes very large.
+
+Example:
+A program may behave differently when processing 10 inputs compared to 1,000,000 inputs.
+
+TYPES OF COMPLEXITY
+
+Time Complexity
+
+Time complexity measures the amount of time an algorithm takes to execute.
+
+Example
+
+Program A takes 30 seconds
+Program B takes 60 seconds
+
+Program A is considered more efficient.
+
+Space Complexity
+
+Space complexity measures how much memory an algorithm requires during execution.
+
+PERFORMANCE CASES OF ALGORITHMS
+
+Best Case
+The minimum time required for an algorithm to complete.
+
+Average Case
+The typical time taken by an algorithm for normal input.
+
+Worst Case
+The maximum time taken by an algorithm in the least favorable condition.
+
+COMMON BIG O NOTATIONS
+
+O(1) – Constant Time
+O(n) – Linear Time
+O(n²) – Quadratic Time
+O(log n) – Logarithmic Time
+O(2ⁿ) – Exponential Time
+
+Other important notations:
+
+Big Omega (Ω) – Best case complexity
+Big Theta (Θ) – Average case complexity
+
+RULES FOR MEASURING COMPLEXITY
+
+Rule 1
+A single assignment or simple statement takes constant time.
+
+Example
+
+a = 5
+
+Time Complexity = O(1)
+
+Rule 2
+A loop that runs from 0 to n has linear complexity.
+
+Example
+
+for i in range(n):
+print(i)
+
+Time Complexity = O(n)
+
+Rule 3
+Nested loops result in quadratic complexity.
+
+Example
+
+for i in range(n):
+for j in range(n):
+print(i, j)
+
+Time Complexity = O(n²)
+
+Rule 4
+If the variable is divided by 2 in each iteration, the complexity becomes logarithmic.
+
+Example
+
+n = 16
+
+while n > 1:
+print(n)
+n = n // 2
+
+Time Complexity = O(log n)
+
+Rule 5
+When multiple operations occur sequentially, their complexities are added but the largest term dominates.
+
+Example
+
+for i in range(n):
+print(i)
+
+for j in range(n):
+print(j)
+
+Total Complexity = O(n)
+
+COMMON QUESTIONS
+
+Difference Between Big O and Big Omega
+
+Big O (O)
+Represents the worst-case complexity of an algorithm.
+
+Big Omega (Ω)
+Represents the best-case complexity of an algorithm.
+
+Difference Between Linear and Non-Linear Data Structures
+
+Linear Data Structures
+Data elements are stored sequentially.
+
+Examples:
+Array
+Stack
+Queue
+
+Non-Linear Data Structures
+Data elements are arranged in hierarchical or network structure.
+
+Examples:
+Tree
+Graph
+
+How O(log n) Complexity Occurs
+
+Logarithmic complexity occurs when the input size is reduced in each step, usually by dividing it by two.
+
+Example Code
+
+n = 64
+
+while n > 1:
+print(n)
+n = n // 2
+
+Sequence
+
+64 → 32 → 16 → 8 → 4 → 2 → 1
+
+Number of steps ≈ log₂(n)
+
+Grid Example Complexity
+
+If two loops iterate over height (h) and width (w):
+
+for i in range(h):
+for j in range(w):
+print(i, j)
+
+Time Complexity = O(h × w) 
